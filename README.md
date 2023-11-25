@@ -22,8 +22,9 @@ Using your knowledge of Pandas and scikit-learn’s StandardScaler(), you’ll n
 Start by uploading the starter file to Google Colab, then using the information we provided in the Challenge files, follow the instructions to complete the preprocessing steps.
 
 1. Read in the charity_data.csv to a Pandas DataFrame, and be sure to identify the following in your dataset:
- - What variable(s) are the target(s) for your model?
- - What variable(s) are the feature(s) for your model?
+   - What variable(s) are the target(s) for your model?: --> IS_SUCCESSFUL' column from application_df.
+   - What variable(s) are the feature(s) for your model?: --> Every other column from application_df --> this was defined by dropping the,'IS_SUCCESSFUL' column from the 'original' dataframe.
+    
 2. Drop the EIN and NAME columns.
 3. Determine the number of unique values for each column.
 4. For columns that have more than 10 unique values, determine the number of data points for each unique value.
@@ -66,10 +67,10 @@ The report should contain the following:
 - Data Preprocessing
   - What variable(s) are the target(s) for your model?
   - What variable(s) are the features for your model?
-  - What variable(s) should be removed from the input data because they are       neither targets nor features?
+  - What variable(s) should be removed from the input data because they are neither targets nor features?
 
 - Compiling, Training, and Evaluating the Model
-  - How many neurons, layers, and activation functions did you select for         your neural network model, and why?
+  - How many neurons, layers, and activation functions did you select for your neural network model, and why?
   - Were you able to achieve the target model performance?
   - What steps did you take in your attempts to increase model performance?
 
